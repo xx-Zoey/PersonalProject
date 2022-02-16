@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+    <title>Music Player</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='css/music.css'>
+</head>
+<body translate="no" >
+<article class="screen">
+    <input type="checkbox" value="None" id="magicButton" name="check" />
+    <label class="main" for="magicButton"></label>
+
+    <div class="coverImage">
+        <img class="songsing" src="image/1.jpg">
+    </div>
+    <div class="search"></div>
+    <div class="bodyPlayer"></div>
+
+    <table class="list">
+        <div class="song-div">
+        <tr class="song">
+            <td class="nr">
+                <h5>1</h5></td>
+            <td class="title" data-index="1"><h6>Throwaway(Clairo)</h6></td>
+            <td class="length"><h5>3:00</h5></td>
+<!--            <td><input type="checkbox" id="heart"/><label class="zmr" for="heart"></label></td>-->
+
+        </tr>
+        </div>
+        <tr class="song">
+            <div class="song-div">
+            <td class="nr"><h5>2</h5></td>
+            <td class="title" data-index="2"><h6>Good in Goodbye</h6></td>
+            <td class="length"><h5>2:21</h5></td>
+            </div>
+        </tr>
+
+        <tr class="song">
+            <div class="song-div">
+            <td class="nr"><h5>3</h5></td>
+            <td class="title" data-index="3"><h6>This is Us</h6></td>
+            <td class="length"><h5>3:25</h5></td>
+            </div>
+        </tr>
+    </table>
+
+    <div class="shadow"></div>
+    <div class="bar">
+        <div class="wrapper">
+            <div class="outer">
+                <div class="inner">
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="times">
+            <span class="zsuijm">4:00</span>
+            <span class="dhqm">00:00</span>
+        </div>
+
+    </div>
+
+    <div class="info">
+        <h4 class="songfont">Throwaway(Clairo)</h4>
+        <h3 class="songsinger">SG Lewis、Clairo</h3>
+    </div>
+
+    <audio preload="auto" id="audio" controls>
+        <source src="audio/1.mp3">
+    </audio>
+    <table class="player">
+        <td><input type="checkbox" id="backward"/><label class="backward" for="backward"></label></td>
+        <td><input type="checkbox" id="play" title="Play" onclick="togglePlayPause()"/><label class="play" for="play"></label></td>
+        <td><input type="checkbox" id="forward"/><label class="forward" for="forward"></label></td>
+    </table>
+
+    <table class="footer moshi">
+        <td><input type="checkbox" id="shuffle"/><label class="shuffle" for="shuffle"></label></td>
+        <td><input type="checkbox" id="repeat"/><label class="repeat" for="repeat"></label></td>
+        <td><input type="checkbox" id="ugyb"/><img src="image/ugyb.png" class="img-ugyb"></td>
+    </table>
+
+    <div class="ybll">
+        <div class="wrapper-ybll">
+            <div class="outer-ybll">
+                <div class="inner-ybll">
+                    <div class="dot-ybll"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="current"><h2>My Player</h2></div>
+</article>
+<script src="music.js" ></script>
+</body>
+</html>
